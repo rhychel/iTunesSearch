@@ -2,7 +2,7 @@
 
 This app demonstrates the *search by term* API from iTunes Web Services.
 
-[Download APK installer](https://github.com/rhychel/iTunesSearch/iTunesSearch.apk)
+[Download APK installer](https://github.com/rhychel/iTunesSearch/raw/master/iTunesSearch.apk)
 
 ### Features
 
