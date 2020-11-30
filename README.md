@@ -1,6 +1,6 @@
 # iTunes Search App
 
-This app demonstrates the *search by term* API from iTunes Web Services.
+This app demonstrates the *search by term* API from iTunes Web Services by showing all the tracks of **movies**.
 
 [Download APK installer](https://github.com/rhychel/iTunesSearch/raw/master/iTunesSearch.apk)
 
