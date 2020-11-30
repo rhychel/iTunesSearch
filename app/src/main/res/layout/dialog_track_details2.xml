@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:clipToPadding="false">
+
+        <ImageView
+            android:id="@+id/ivArtwork"
+            android:layout_width="58dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtnClose"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/tvTrackName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivArtwork"
+            app:layout_constraintTop_toTopOf="@+id/ivArtwork" />
+
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_genre"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="TextView"
+            android:textColor="@color/design_default_color_on_primary"
+            app:layout_constraintStart_toStartOf="@+id/tvTrackName"
+            app:layout_constraintTop_toBottomOf="@+id/tvTrackName" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/tvGenre"
+            app:layout_constraintTop_toBottomOf="@+id/tvGenre" />
+
+        <TextView
+            android:id="@+id/tvLongDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvPrice"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+        <ImageButton
+            android:id="@+id/ibtnClose"
+            style="?borderlessButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close" />
+
+        <ProgressBar
+            android:id="@+id/pbLoader"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/ivArtwork"
+            app:layout_constraintEnd_toEndOf="@+id/ivArtwork"
+            app:layout_constraintStart_toStartOf="@+id/ivArtwork"
+            app:layout_constraintTop_toTopOf="@+id/ivArtwork" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
